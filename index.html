@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider in the frame (phone) | Слайдер в рамке (телефона)</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+
+
+  <div class="slider-in-frame">
+    <div class="slider-in-frame__slider carousel">
+      <span class="slider-in-frame__item carousel-item"><img class="slider-in-frame__img" src="./img/1.jpg"></span>
+      <span class="slider-in-frame__item carousel-item"><img class="slider-in-frame__img" src="./img/2.jpg"></span>
+      <span class="slider-in-frame__item carousel-item"><img class="slider-in-frame__img" src="./img/3.jpg"></span>
+      <span class="slider-in-frame__item carousel-item"><img class="slider-in-frame__img" src="./img/4.jpg"></span>
+      <span class="slider-in-frame__item carousel-item"><img class="slider-in-frame__img" src="./img/5.jpg"></span>
+    </div>
+    <img class="slider-in-frame__decor-phone" src="./img/phone.png" alt="">
+  </div>
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems, {
+        dist: -60,
+        shift: 0,
+        padding: -40,
+      });
+    });
+  </script>
+</body>
+
+</html>
